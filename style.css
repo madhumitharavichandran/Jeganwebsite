@@ -245,7 +245,7 @@ section {
               0 0 50px rgba(255, 215, 0, 0.15);
   
   /* Smooth Floating Animation */
-  animation: floatProfile 4s ease-in-out infinite;
+  /*animation: floatProfile 4s ease-in-out infinite; */
   transition: box-shadow 0.3s ease;
 }
 
@@ -283,6 +283,7 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
+    border: #ffd700;
 }
 /* ==========================================
    WORK EXPERIENCE & TIMELINE
@@ -487,6 +488,8 @@ section {
   justify-content: space-between;
   gap: 3rem;
   text-align: left;
+
+  
 }
 
 /* Clean Right-Aligned Portrait Layout */
@@ -504,11 +507,14 @@ section {
 }
 
 .home-img {
-  width: 380px;
-  max-height: 380px;
-  object-fit: contain;
-  border-radius: 0;
-  background: transparent;
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 5px solid #ffd700;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
   /* Optional: adds high-contrast black & white style like the screenshot */
   /* filter: grayscale(100%); */ 
 }
@@ -575,6 +581,8 @@ footer p,
     height: auto !important;
     margin-top: 25px !important;
     display: block !important;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4), 
+              0 0 50px rgba(255, 215, 0, 0.15);
   }
 
   /* Ensure background overlay doesn't double-layer */

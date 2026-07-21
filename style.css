@@ -227,13 +227,13 @@ section {
 }
 
 /* Center Container & Floating Profile Image */
-.profile-img, 
-.hero-img {
-  width: 200px !important;
-  height: 200px !important;
+.profile-img{
+  width: 250px !important;
+  height: 250px !important;
   object-fit: cover;
   border-radius: 50%;
   border: none !important;
+  object-position: center top;
   
   /* Auto margins center block elements */
   display: block;
@@ -278,7 +278,12 @@ section {
   box-shadow: 0 5px 20px rgba(0, 242, 254, 0.4);
   color: #000;
 }
-
+.hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 /* ==========================================
    WORK EXPERIENCE & TIMELINE
    ========================================== */
@@ -507,7 +512,7 @@ section {
   /* Optional: adds high-contrast black & white style like the screenshot */
   /* filter: grayscale(100%); */ 
 }
-}
+
 @media (max-width: 991px) {
   .home-wrapper {
     flex-direction: column;
@@ -522,7 +527,7 @@ footer p,
   text-shadow: 0 0 8px rgba(255, 215, 0, 0.3); /* Soft gold glow */
 }
 /* Mobile Responsive Layout Fix */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   /* Remove background image bleed on mobile left side */
   .hero-section, 
   header, 
@@ -541,12 +546,12 @@ footer p,
   }
 
   /* Mobile Responsive Fix for Hero Section & Images */
-@media screen and (max-width: 991px) {
+@media  (max-width: 768px) {
   
   /* Force Home Wrapper to stack vertically instead of side-by-side */
   .home-wrapper {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column column-reverse !important;
     align-items: center !important;
     text-align: center !important;
     padding-top: 20px !important;

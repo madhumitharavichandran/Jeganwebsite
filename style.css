@@ -540,28 +540,45 @@ footer p,
     text-align: center !important;
   }
 
-  /* Make photos take full width and stack properly */
-  .row img, 
-  .hero-img, 
-  .profile-img {
-    max-width: 100% !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 20px 0 !important;
-    position: relative !important;
-    left: 0 !important;
-  }
-
-  /* Center hero buttons on mobile */
-  .hero-buttons, 
-  .btn-container {
+  /* Mobile Responsive Fix for Hero Section & Images */
+@media screen and (max-width: 991px) {
+  
+  /* Force Home Wrapper to stack vertically instead of side-by-side */
+  .home-wrapper {
     display: flex !important;
     flex-direction: column !important;
-    gap: 10px !important;
-    width: 100% !important;
     align-items: center !important;
+    text-align: center !important;
+    padding-top: 20px !important;
   }
 
+  /* Full width for content and image wrappers */
+  .home-content, 
+  .home-img-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Center the Action Buttons on Mobile */
+  .home-content .d-flex {
+    justify-content: center !important;
+  }
+
+  /* Make Hero Image clean, centered, and scaled properly */
+  .home-img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-top: 25px !important;
+    display: block !important;
+  }
+
+  /* Ensure background overlay doesn't double-layer */
+  #home {
+    background-size: cover !important;
+    background-position: center !important;
+    overflow: hidden !important;
+  }
+}
   .btn {
     width: 80% !important;
   }

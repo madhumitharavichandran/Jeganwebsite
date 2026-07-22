@@ -13,7 +13,7 @@
   --accent-blue: #ffaa00;
   --gradient-primary: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
   --text-primary: #ffffff;
-  --text-muted: #94a3b8;
+  --text-muted: gold;
 }
 
 html {
@@ -51,17 +51,19 @@ h2 {
   display: inline-block;
   margin-bottom: 1rem;
 }
-
-.subtitle {
-  color: var(--accent-cyan);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 0.5rem;
+#home .subtitle {
+    text-align: left;
 }
-
+.subtitle {
+    color:white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+}
 /* ==========================================
    NAVIGATION
    ========================================== */
@@ -165,6 +167,18 @@ section {
   font-size: 1.35rem;
   max-width: 600px;
 }
+.about-content h2{
+    margin-bottom: 25px;
+}
+.about-content {
+    text-align: center;
+}
+
+.about-content .subtitle {
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+}
 
 /* ==========================================
    ANIMATIONS & EFFECTS
@@ -176,7 +190,11 @@ section {
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
-
+.typed-white {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    background: none;
+}
 .cursor {
   font-weight: 300;
   color: var(--accent-cyan);
@@ -215,7 +233,7 @@ section {
 
 .expertise-card:hover, .cert-card:hover, .contact-card:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(0, 242, 254, 0.3);
+  border-color: rgba(127, 254, 0, 0.648);
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 242, 254, 0.1);
 }
@@ -261,6 +279,10 @@ section {
     transform: translateY(0px);
   }
 }
+.profile-img-wrapper{
+    margin: 25px 0 35px;
+}
+
 .read-more-btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -283,7 +305,7 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: #ffd700;
+    border: gold;
 }
 /* ==========================================
    WORK EXPERIENCE & TIMELINE
@@ -340,11 +362,13 @@ section {
 }
 
 .exp-date {
-  font-size: 0.85rem;
-  color: var(--accent-cyan);
-  background: rgba(0, 242, 254, 0.1);
-  padding: 4px 12px;
-  border-radius: 20px;
+    background: rgba(255, 215, 0, 0.15);   /* Soft gold */
+    color: #FFD700;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .company-name {
@@ -371,15 +395,16 @@ section {
 }
 
 .badge-tag {
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--accent-cyan);
-  background: rgba(0, 242, 254, 0.08);
-  border: 1px solid rgba(0, 242, 254, 0.25);
-  padding: 4px 12px;
-  border-radius: 20px;
-  letter-spacing: 0.5px;
+  
+    background: rgba(255, 215, 0, 0.15);   /* Soft gold */
+    color: #FFD700;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
+
 
 /* ==========================================
    SKILLS & PROGRESS BARS
@@ -512,12 +537,12 @@ section {
     object-fit: cover;
     object-position: center top;
     border-radius: 50%;
-    border: 5px solid #ffd700;
+    border: 5px solid gold;
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
 }
   /* Optional: adds high-contrast black & white style like the screenshot */
   /* filter: grayscale(100%); */ 
-}
+
 
 @media (max-width: 991px) {
   .home-wrapper {
@@ -557,7 +582,7 @@ footer p,
   /* Force Home Wrapper to stack vertically instead of side-by-side */
   .home-wrapper {
     display: flex !important;
-    flex-direction: column column-reverse !important;
+    flex-direction: column-reverse !important;
     align-items: center !important;
     text-align: center !important;
     padding-top: 20px !important;
@@ -576,15 +601,17 @@ footer p,
   }
 
   /* Make Hero Image clean, centered, and scaled properly */
-  .home-img {
-    max-width: 100% !important;
-    height: auto !important;
-    margin-top: 25px !important;
-    display: block !important;
-      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4), 
-              0 0 50px rgba(255, 215, 0, 0.15);
-  }
-
+ .home-img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:50%;
+    border:3px solid rgba(255,215,0,.6);
+    box-shadow:
+        0 0 25px rgba(255,215,0,.35),
+        0 0 60px rgba(255,215,0,.15);
+}
   /* Ensure background overlay doesn't double-layer */
   #home {
     background-size: cover !important;

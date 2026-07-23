@@ -64,6 +64,8 @@ h2 {
     text-align: center;
     margin: 0 auto 20px;
 }
+
+
 /* ==========================================
    NAVIGATION
    ========================================== */
@@ -113,6 +115,8 @@ h2 {
 .navbar .navbar-nav .nav-link:hover {
   color: #ffd700 !important;
 }
+
+ 
 
 /* Active State: Permanent Gold Underline & Glow */
 .navbar .navbar-nav .nav-link.active {
@@ -230,10 +234,15 @@ section {
   height: 100%;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.expertise-card h3{
+    color: #bdbdbd;   
+}
+.expertise-card p {
+    color: #bdbdbd;  
+  }
 .expertise-card:hover, .cert-card:hover, .contact-card:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(127, 254, 0, 0.648);
+  border-color:gold;
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 242, 254, 0.1);
 }
@@ -243,7 +252,10 @@ section {
   color: var(--accent-cyan);
   margin-bottom: 1rem;
 }
-
+/*certification h2*/
+.cert-card h3 {
+    color: #bdbdbd;  
+  }
 /* Center Container & Floating Profile Image */
 .profile-img{
   width: 250px !important;
@@ -358,16 +370,16 @@ section {
 .role-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #ffffff;
+   color: whitesmoke;
 }
 
 .exp-date {
-    background: rgba(255, 215, 0, 0.15);   /* Soft gold */
-    color: #FFD700;
-    border: 1px solid rgba(255, 215, 0, 0.4);
+     background: rgba(0, 140, 255, 0.15);   /* Soft gold */
+    color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 30px;
     padding: 8px 18px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
@@ -396,12 +408,12 @@ section {
 
 .badge-tag {
   
-    background: rgba(255, 215, 0, 0.15);   /* Soft gold */
-    color: #FFD700;
-    border: 1px solid rgba(255, 215, 0, 0.4);
+   background: rgba(0, 140, 255, 0.15);   /* Soft gold */
+    color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 30px;
     padding: 8px 18px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
@@ -411,6 +423,7 @@ section {
    ========================================== */
 .skill-item {
   margin-bottom: 1.8rem;
+   color: #bdbdbd;
 }
 
 .skill-info {
@@ -486,8 +499,11 @@ section {
   color: var(--accent-cyan) !important;
   text-decoration: none;
   transition: all 0.3s ease;
+   
 }
-
+.contact-card h3{
+       color: #bdbdbd;
+}
 .contact-card a:hover {
   color: #ffffff !important;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
@@ -506,6 +522,11 @@ section {
   box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4) !important;
   color: #000000 !important;
 }
+.contact-note{
+    color: #bdbdbd;    
+    font-size: 18px;
+    margin-top: 10px;
+}
 /* Home Left Image Layout */
 .home-wrapper {
   display: flex;
@@ -523,10 +544,10 @@ section {
   width: auto;
   max-width: 450px;
   height: 100%;
-  border-radius: 0;       /* Removes box outline */
-  padding: 0;             /* Removes inner padding */
-  background: none;       /* Removes gradient border */
-  box-shadow: gold;       /* Removes glow */
+  border-radius: 0;       /*  box outline */
+  padding: 0;             /*  inner padding */
+  background: none;       /* gradient border */
+  box-shadow: gold;       /*  glow */
   display: flex;
   align-items: flex-end;
 }
@@ -540,7 +561,7 @@ section {
     border: 5px solid gold;
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
 }
-  /* Optional: adds high-contrast black & white style like the screenshot */
+  
   /* filter: grayscale(100%); */ 
 
 

@@ -253,9 +253,16 @@ section {
   margin-bottom: 1rem;
 }
 /*certification h2*/
-.cert-card h3 {
+.cert-card h3  {
     color: #bdbdbd;  
   }
+  .cert-card p{
+       color: #bdbdbd;
+}
+.cert-issue p{
+        color: #bdbdbd;
+}
+
 /* Center Container & Floating Profile Image */
 .profile-img{
   width: 250px !important;
@@ -503,6 +510,9 @@ section {
 }
 .contact-card h3{
        color: #bdbdbd;
+}
+.contact-card p{
+           color: #bdbdbd;
 }
 .contact-card a:hover {
   color: #ffffff !important;
